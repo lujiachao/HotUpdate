@@ -24,9 +24,9 @@
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "CONSUL_URL": "http://localhost:8500",
+      "CONSUL_PATH": "key1"
     }
-  },
-  "CONSUL_URL": "http://localhost:8500",
-  "CONSUL_PATH": "key1"
+  }
 }

@@ -21,8 +21,8 @@ namespace FitUpdate
             {
                 _consulUri.Add(new Uri("http://localhost:8500"));
                 var configuration = cb.Build();
-                //cb.AddConsul(new[] { configuration.GetValue<Uri>("CONSUL_URL") }, configuration.GetValue<string>("CONSUL_PATH"));
-                cb.AddConsul(_consulUri, "key1");
+                cb.AddConsul(new[] { configuration.GetValue<Uri>("CONSUL_URL") }, configuration.GetValue<string>("CONSUL_PATH"));
+                //cb.AddConsul(_consulUri, "key1");
             })
             .UseStartup<Startup>()
             .Build();
